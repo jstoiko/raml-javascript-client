@@ -2,5 +2,5 @@
 
 '''sh
 $ npm i -g raml-client-generator
-$ raml-to-client exemple.raml -o exemple-client -l javascript
+$ raml-to-client example.raml -o example-client -l javascript
 '''
