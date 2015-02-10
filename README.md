@@ -1,4 +1,4 @@
-## Generate javascript client library
+## Generate a javascript client library from a RAML spec
 
 '''sh
 $ npm i -g raml-client-generator
