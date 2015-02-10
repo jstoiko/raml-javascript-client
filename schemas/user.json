@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "required": true,
+    "properties": {
+        "id": {
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "required": false,
+            "type": "string"
+        },
+        "email": {
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "required": true,
+            "type": "string"
+        },
+        "first_name": {
+            "required": false,
+            "type": "string"
+        },
+        "last_name": {
+            "required": false,
+            "type": "string"
+        },
+        "groups": {
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

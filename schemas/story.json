@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "required": true,
+    "properties": {
+        "id": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "creation_date": {
+            "required": true,
+            "type": "date"
+        },
+        "start_date": {
+            "required": true,
+            "type": "date"
+        },
+        "finish_date": {
+            "required": true,
+            "type": "date"
+        },
+        "points": {
+            "required": true,
+            "type": "number"
+        },
+        "description": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
