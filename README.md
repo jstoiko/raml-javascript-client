@@ -13,10 +13,12 @@ $ virtualenv venv && . venv/bin/activate
 In another terminal session, attach to the same virtual environment as the API server and post some seed data.
 
 ```sh
-$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/toppings.json -u http://localhost:6543/api/toppings
-$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/cheeses.json -u http://localhost:6543/api/cheeses
-$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/sauces.json -u http://localhost:6543/api/sauces
-$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/crusts.json -u http://localhost:6543/api/crusts
+$ cd ramses-tutorial/pizza_factory
+$ . venv/bin/activate
+(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/toppings.json -u http://localhost:6543/api/toppings
+(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/cheeses.json -u http://localhost:6543/api/cheeses
+(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/sauces.json -u http://localhost:6543/api/sauces
+(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/crusts.json -u http://localhost:6543/api/crusts
 ```
 
 
