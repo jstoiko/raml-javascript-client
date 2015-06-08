@@ -1,3 +1,6 @@
 [submodule "ramses-tutorial"]
 	path = ramses-tutorial
 	url = git@github.com:chrstphrhrt/ramses-tutorial.git
+[submodule "ramses-backbone-client"]
+	path = ramses-backbone-client
+	url = git@github.com:jstoiko/gulp-backbone-browserify.git
