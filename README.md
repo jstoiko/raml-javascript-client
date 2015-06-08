@@ -1,12 +1,15 @@
+Clone this repo with the recursive option `git clone --recursive https://github.com/jstoiko/raml-javascript-client.git`.
+
+
 Install and run the backend API server
 --------------------------------------
 
-**Prerequisites:** Elasticsearch and PostgreSQL must be running with default settings.
+**Prerequisites:** [Virtualenv](https://virtualenv.pypa.io/en/latest/installation.html), [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html) and [PostgreSQL](http://www.postgresql.org/download/) must be running with default settings.
 
 ```sh
 $ cd ramses-tutorial/pizza_factory
 $ virtualenv venv && . venv/bin/activate
-(venv)$ pip install ramses nefertari-sqla -r requirements.txt
+(venv)$ pip install nefertari-sqla -r requirements.txt
 (venv)$ pserve local.ini
 ```
 
@@ -15,25 +18,26 @@ In another terminal session, attach to the same virtual environment as the API s
 ```sh
 $ cd ramses-tutorial/pizza_factory
 $ . venv/bin/activate
-(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/toppings.json -u http://localhost:6543/api/toppings
-(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/cheeses.json -u http://localhost:6543/api/cheeses
-(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/sauces.json -u http://localhost:6543/api/sauces
-(venv)$ nefertari.post2api -f ramses-tutorial/pizza_factory/seeds/crusts.json -u http://localhost:6543/api/crusts
+(venv)$ nefertari.post2api -f seeds/toppings.json -u http://localhost:6543/api/toppings
+(venv)$ nefertari.post2api -f seeds/cheeses.json -u http://localhost:6543/api/cheeses
+(venv)$ nefertari.post2api -f seeds/sauces.json -u http://localhost:6543/api/sauces
+(venv)$ nefertari.post2api -f seeds/crusts.json -u http://localhost:6543/api/crusts
 ```
 
 
 Generate and use the client library
 -----------------------------------
 
-With the backend API server running, open another terminal session and `cd` to the root directory of this `raml-javascript-client` project.
+Then go back to the root of this project and get cracking.
 
 ```sh
+$ cd ../../
 $ npm i -g raml-client-generator
 $ raml-to-client ramses-tutorial/pizza_factory/api.raml -o pizza-factory-api -l javascript
-$ npm install pizza-factory-api --save
+$ npm install pizza-factory-api
 ```
 
-Now you will have a client library that knows how to use the Pizza Factory API.
+Now you will have a client library that already knows how to use the Pizza Factory API.
 
 ```js
 $ node
