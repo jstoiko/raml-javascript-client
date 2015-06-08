@@ -1,10 +1,10 @@
-Clone this repo with the recursive option `git clone --recursive https://github.com/jstoiko/raml-javascript-client.git`.
+Clone this repo with the recursive option `git clone --recursive https://github.com/jstoiko/raml-javascript-client.git` (needed to fetch the backend that the js client will be using).
 
 
 Install and run the backend API server
 --------------------------------------
 
-**Prerequisites:** [Virtualenv](https://virtualenv.pypa.io/en/latest/installation.html), [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html) and [PostgreSQL](http://www.postgresql.org/download/) must be running with default settings.
+**Prerequisites:** Python and [Virtualenv](https://virtualenv.pypa.io/en/latest/installation.html). [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/_installing_elasticsearch.html) and [PostgreSQL](http://www.postgresql.org/download/) must be running with default settings.
 
 ```sh
 $ cd ramses-tutorial/pizza_factory
@@ -47,4 +47,4 @@ $ node
 > resource.get().then(function (res) { console.log(res.body) });
 ```
 
-You can see complete details of how to use the client in pizza-factory-api/README.md.
+You can see complete details of how to use the client in `pizza-factory-api/README.md`.
