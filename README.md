@@ -1,4 +1,4 @@
-Clone this repo with the recursive option `git clone --recursive https://github.com/jstoiko/raml-javascript-client.git` (needed to fetch the backend that the js client will be using).
+Clone this repo with the recursive option `git clone --recursive` (needed to fetch the backend for the API that this JavaScript client will be consuming).
 
 
 Install and run the backend API server
