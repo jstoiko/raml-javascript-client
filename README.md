@@ -37,7 +37,7 @@ $ raml-to-client ramses-tutorial/pizza_factory/api.raml -o pizza-factory-api -l 
 $ npm install pizza-factory-api
 ```
 
-Now you will have a client library that already knows how to use the Pizza Factory API.
+You can see complete details of how to use the client in `pizza-factory-api/README.md`. Now you will have a client library that already knows how to use the Pizza Factory API.
 
 ```js
 $ node
@@ -47,4 +47,13 @@ $ node
 > resource.get().then(function (res) { console.log(res.body) });
 ```
 
-You can see complete details of how to use the client in `pizza-factory-api/README.md`.
+
+Install and run frontend app
+----------------------------
+
+**Prerequisites:** [Npm (ships with Node.js)](https://github.com/joyent/node/wiki/installing-node.js-via-package-manager) and [Gulp](http://gulpjs.com/) (`npm install -g gulp`)
+
+```sh
+$ npm install
+$ gulp
+```

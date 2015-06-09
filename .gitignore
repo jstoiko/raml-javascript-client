@@ -1,1 +1,4 @@
-pizza-factory-api/
+.DS_Store
+node_modules
+dist
+pizza-factory-api
