@@ -25,8 +25,8 @@ $ . venv/bin/activate
 ```
 
 
-Generate documentation
-----------------------
+Generate the API documentation
+------------------------------
 ```sh
 $ npm i -g raml2html
 $ raml2html ramses-tutorial/pizza_factory/api.raml > api-doc.html
@@ -34,7 +34,7 @@ $ open api-doc.html
 ```
 
 
-Generate and use the client library in node
+Generate and try the client library in node
 -------------------------------------------
 
 Then go back to the root of this project and get cracking.
@@ -57,8 +57,8 @@ $ node
 ```
 
 
-Install and run frontend app
-----------------------------
+Install and run the frontend app
+--------------------------------
 
 **Prerequisites:** [Npm (ships with Node.js)](https://github.com/joyent/node/wiki/installing-node.js-via-package-manager) and [Gulp](http://gulpjs.com/) (`npm install -g gulp`)
 
