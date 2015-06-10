@@ -1,4 +1,4 @@
-Clone this repo with the recursive option `git clone --recursive` (needed to fetch the backend for the API that this JavaScript client will be consuming).
+Clone this repo with the recursive option `git clone --recursive`.
 
 
 Install and run the backend API server
@@ -25,8 +25,17 @@ $ . venv/bin/activate
 ```
 
 
-Generate and use the client library
------------------------------------
+Generate documentation
+----------------------
+```sh
+$ npm i -g raml2html
+$ raml2html ramses-tutorial/pizza_factory/api.raml > api-doc.html
+$ open api-doc.html
+```
+
+
+Generate and use the client library in node
+-------------------------------------------
 
 Then go back to the root of this project and get cracking.
 
